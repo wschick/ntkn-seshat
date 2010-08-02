@@ -1,9 +1,14 @@
 /config.guess
 /config.status
 /config.sub
+/config.log
 /configure
 /COPYING
 /INSTALL
 /install-sh
 /missing
 /autom4te.cache
+/autom4te.cache
+/config.status
+/aclocal.m4
+/depcomp
