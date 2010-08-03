@@ -42,6 +42,43 @@ void Logger::init(string filename)
 	}
 }
 
+
+
+void Logger::debug(std::string msg)
+{
+
+}
+
+void Logger::info(std::string msg)
+{
+
+}
+
+void Logger::notice(std::string msg)
+{
+
+}
+
+void Logger::warn(std::string msg)
+{
+
+}
+
+void Logger::error(std::string msg)
+{
+
+}
+
+void Logger::crit(std::string msg)
+{
+
+}
+
+void Logger::run()
+{
+
+}
+
 }
 
 }
