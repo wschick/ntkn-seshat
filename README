@@ -1,6 +1,5 @@
 This application is a packet logger for the NTKN AlphaFlash macro-economic data
 feed.
 
-It listens for multicast data and inserts them into a NoSQL database.
-
-It's intended use is profiling and predictive analysis.
+It listens for multicast data and inserts the received packets into a NoSQL
+database. It's intended use is profiling and predictive analysis.
