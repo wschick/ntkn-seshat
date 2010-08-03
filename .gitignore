@@ -12,3 +12,12 @@
 /config.status
 /aclocal.m4
 /depcomp
+/aclocal.m4
+/config.guess
+/config.status
+/config.sub
+/configure
+/depcomp
+/install-sh
+/missing
+/autom4te.cache
