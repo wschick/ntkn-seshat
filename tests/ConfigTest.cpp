@@ -84,4 +84,9 @@ BOOST_AUTO_TEST_SUITE_END()
 
 BOOST_AUTO_TEST_SUITE( config_parse_argv )
 
+BOOST_AUTO_TEST_CASE( config_parse_argv )
+{
+
+}
+
 BOOST_AUTO_TEST_SUITE_END()
