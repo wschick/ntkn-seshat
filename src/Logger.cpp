@@ -19,7 +19,13 @@ namespace ntkn {
 
 namespace seshat {
 
+void Logger_run()
+{
+
+}
+
 Logger::Logger()
+	: th( *(new Thread<Logger>(*this) ) )
 {
 
 }
@@ -70,11 +76,6 @@ void Logger::error(std::string msg)
 }
 
 void Logger::crit(std::string msg)
-{
-
-}
-
-void Logger::run()
 {
 
 }
