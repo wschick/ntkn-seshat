@@ -19,7 +19,7 @@ using namespace com::ntkn::seshat;
 
 #define BOOST_TEST_MODULE TestConfig
 
-BOOST_AUTO_TEST_SUITE( config_parse_srcgrouport )
+BOOST_AUTO_TEST_SUITE( config_parse_srcgrouport );
 
 // Test Valid Input #1
 BOOST_AUTO_TEST_CASE( config_parse_srcgroupport_inaddr_any )
@@ -80,13 +80,18 @@ BOOST_AUTO_TEST_CASE( config_add_srcgroupport_invalid_port )
 	BOOST_REQUIRE_THROW( cfg.add_srcgroupport("127.0.0.1:224.0.1.1:123123123"), InvalidPortException );
 }
 
-BOOST_AUTO_TEST_SUITE_END()
+BOOST_AUTO_TEST_SUITE_END();
 
-BOOST_AUTO_TEST_SUITE( config_parse_argv )
+BOOST_AUTO_TEST_SUITE( config_parse_argv );
 
-BOOST_AUTO_TEST_CASE( config_parse_argv )
+BOOST_AUTO_TEST_CASE( config_parse_argv_onegroup )
 {
 
 }
 
-BOOST_AUTO_TEST_SUITE_END()
+BOOST_AUTO_TEST_CASE( config_parse_argv_twogroup )
+{
+
+}
+
+BOOST_AUTO_TEST_SUITE_END();

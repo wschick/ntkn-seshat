@@ -21,14 +21,14 @@ AC_ARG_WITH([boost],
 AC_SUBST([BOOST_LIBS])
 AC_SUBST([BOOST_CXXFLAGS])
 
-AC_ARG_WITH([mongo],
-  [AS_HELP_STRING([--with-mongo], [prefix of the Mongo installation])],
-  [MONGO_LIBS="-L$withval -lmongoclient"
-   MONGO_CFLAGS="-I$withval/mongo"],
-  [MONGO_LIBS="-lmongoclient"
-   MONGO_CXXFLAGS="-I$includedir/mongo"])
-AC_SUBST([MONGO_LIBS])
-AC_SUBST([MONGO_CXXFLAGS])
+AC_ARG_WITH([cassandra],
+  [AS_HELP_STRING([--with-cassandra], [prefix of the libcassandra installation])],
+  [CASSANDRA_LIBS="-L$withval"
+   CASSANDRA_CFLAGS="-I$withval/libcassandra"],
+  [CASSANDRA_LIBS=""
+   CASSANDRA_CXXFLAGS="-I$includedir/libcassandra"])
+AC_SUBST([CASSANDRA_LIBS])
+AC_SUBST([CASSANDRA_CXXFLAGS])
 
 AC_CONFIG_FILES(Makefile src/Makefile tests/Makefile)
 AC_OUTPUT

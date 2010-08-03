@@ -15,13 +15,13 @@ libntkn_seshat_a_SOURCES=\
 	SocketException.cpp
 
 ntkn_seshat_CXXFLAGS=\
-	$(MONGO_CXXFLAGS) \
+	$(CASSANDRA_CXXFLAGS) \
 	$(BOOST_CXXFLAGS)
 ntkn_seshat_LDADD=\
 	libntkn-seshat.a \
 	$(NTKN_SESHAT_LIBS) \
 	$(BOOST_LIBS) \
-	$(MONGO_LIBS)
+	$(CASSANDRA_LIBS)
 ntkn_seshat_SOURCES=\
 	ntkn-seshat.cpp
 

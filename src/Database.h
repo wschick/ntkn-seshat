@@ -9,7 +9,6 @@
 #define DATABASE_H_
 
 #include <string>
-#include <mongo/client/dbclient.h>
 
 namespace com {
 

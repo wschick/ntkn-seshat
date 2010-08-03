@@ -10,7 +10,7 @@ ntkn_seshat_test_config_LDADD=\
 	$(top_srcdir)/src/libntkn-seshat.a \
 	$(NTKN_SESHAT_LIBS) \
 	$(BOOST_LIBS) \
-	$(MONGO_LIBS) \
+	$(CASSANDRA_LIBS) \
 	-lboost_unit_test_framework
 ntkn_seshat_test_config_SOURCES=\
 	ConfigTest.cpp

@@ -10,7 +10,7 @@
 
 #include <string>
 #include <stdexcept>
-#include <boost/exception/exception.hpp>
+#include "boost_throw_exception.h"
 
 namespace com {
 

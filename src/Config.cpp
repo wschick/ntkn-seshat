@@ -11,6 +11,8 @@
 #include "InvalidPortException.h"
 #include "SocketException.h"
 
+#include "boost_throw_exception.h"
+
 #include <iostream>
 
 #include <boost/program_options.hpp>
