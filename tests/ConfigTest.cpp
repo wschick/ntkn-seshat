@@ -1,5 +1,5 @@
 /*
- * TestConfig.cpp
+ * ConfigTest.cpp
  *
  *  Created on: Jul 30, 2010
  *      Author: james.cape
@@ -8,6 +8,7 @@
 #include "ntkn-seshat-test.h"
 
 #include <Config.h>
+#include <SocketException.h>
 #include <InvalidGroupException.h>
 #include <InvalidIfaceException.h>
 #include <InvalidPortException.h>
