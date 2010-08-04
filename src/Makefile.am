@@ -11,7 +11,11 @@ libntkn_seshat_a_SOURCES=\
 	InvalidGroupException.cpp \
 	InvalidIfaceException.cpp \
 	InvalidPortException.cpp \
-	SocketException.cpp
+	SocketException.cpp \
+	MessageDecoder.cpp \
+	IndicatorMessage.cpp \
+	deserializer/DecodedIndicatorMessage.cpp \
+	deserializer/DeserializingDecoder.cpp 
 
 ntkn_seshat_CXXFLAGS=\
 	$(CASSANDRA_CXXFLAGS) \

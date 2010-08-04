@@ -1,10 +1,12 @@
 TESTS=\
 	ntkn-seshat-test-config \
-	ntkn-seshat-test-socket
+	ntkn-seshat-test-socket \
+	ntkn-seshat-test-message
 
 check_PROGRAMS=\
 	ntkn-seshat-test-config \
-	ntkn-seshat-test-socket
+	ntkn-seshat-test-socket \
+	ntkn-seshat-test-message
 
 AM_CXXFLAGS=\
 	-I$(top_srcdir)/src
@@ -21,3 +23,6 @@ ntkn_seshat_test_config_SOURCES=\
 
 ntkn_seshat_test_socket_SOURCES=\
 	SocketTest.cpp
+	
+ntkn_seshat_test_message_SOURCES=\
+	MessageDecoderTest.cpp
