@@ -13,9 +13,11 @@ namespace ntkn {
 
 namespace seshat {
 
-Socket::Socket(Database &database, Logger &logger)
+Socket::Socket(const Database &database, const Logger &logger)
 	:db(database),
-	 lg(logger){
+	 lg(logger),
+	 th(*(new Thread<Socket>(*this)))
+{
 
 }
 

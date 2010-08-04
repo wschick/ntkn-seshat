@@ -37,7 +37,7 @@ public:
 	void run();
 
 	log4cpp::Category *category;
-	Thread<Logger> &th;
+	const Thread<Logger> &th;
 };
 
 }

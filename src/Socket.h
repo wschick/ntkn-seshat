@@ -10,6 +10,8 @@
 
 #include "Database.h"
 #include "Logger.h"
+#include "AsyncWorker.h"
+#include "Thread.h"
 
 using namespace std;
 
@@ -19,17 +21,19 @@ namespace ntkn {
 
 namespace seshat {
 
-class Socket {
+class Socket : public AsyncWorker {
 public:
-	Socket(Database &database, Logger &logger);
+	Socket(const Database &database, const Logger &logger);
 	virtual ~Socket();
 
 	void bind(const struct in_addr *ifaddr, const struct sockaddr_in *maddr);
-	void run();
 
 	int sockfd;
-	Database &db;
-	Logger &lg;
+	const Database &db;
+	const Logger &lg;
+	const Thread<Socket> &th;
+
+	void run();
 };
 
 }

@@ -34,7 +34,7 @@ public:
 
 	void run();
 
-	Thread<Database> &th;
+	const Thread<Database> &th;
 };
 
 }
