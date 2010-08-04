@@ -25,11 +25,21 @@ template <class T>
 class Thread : public boost::function0<void>
 {
 public:
-	Thread(const T& object);
-	virtual ~Thread();
-	void operator()();
+	Thread(const T& aw)
+		: worker( aw )
+	{
+	}
 
-	T& obj;
+	~Thread()
+	{
+	}
+
+	void operator()()
+	{
+		this->worker->run();
+	}
+
+	const T& worker;
 };
 
 }

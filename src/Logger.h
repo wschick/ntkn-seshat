@@ -12,7 +12,6 @@
 #include "Thread.h"
 
 #include <string>
-#include <boost/thread.hpp>
 #include <log4cpp/Category.hh>
 
 namespace com {
@@ -21,7 +20,7 @@ namespace ntkn {
 
 namespace seshat {
 
-class Logger : public AsyncWorker {
+class Logger : AsyncWorker {
 public:
 	Logger();
 	virtual ~Logger();

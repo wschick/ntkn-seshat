@@ -10,6 +10,8 @@
 #include <log4cpp/PropertyConfigurator.hh>
 #include <log4cpp/BasicConfigurator.hh>
 
+#include <boost/thread.hpp>
+
 
 using namespace std;
 
@@ -18,11 +20,6 @@ namespace com {
 namespace ntkn {
 
 namespace seshat {
-
-void Logger_run()
-{
-
-}
 
 Logger::Logger()
 	: th( *(new Thread<Logger>(*this) ) )
@@ -46,6 +43,8 @@ void Logger::init(string filename)
 		log4cpp::BasicConfigurator log4cpp_cfg;
 		log4cpp_cfg.configure();
 	}
+
+	boost::thread(this->th);
 }
 
 

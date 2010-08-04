@@ -8,7 +8,6 @@ libntkn_seshat_a_SOURCES=\
 	Database.cpp \
 	Logger.cpp \
 	Socket.cpp \
-	Thread.cpp \
 	InvalidGroupException.cpp \
 	InvalidIfaceException.cpp \
 	InvalidPortException.cpp \

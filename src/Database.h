@@ -8,6 +8,9 @@
 #ifndef DATABASE_H_
 #define DATABASE_H_
 
+#include "AsyncWorker.h"
+#include "Thread.h"
+
 #include <string>
 
 namespace com {
@@ -16,7 +19,7 @@ namespace ntkn {
 
 namespace seshat {
 
-class Database {
+class Database : public AsyncWorker {
 public:
 	Database();
 	virtual ~Database();
@@ -26,9 +29,12 @@ public:
 				 std::string password);
 	void connect(std::string host);
 	void connect();
-	void run();
 	void insert();
 	void insertv();
+
+	void run();
+
+	Thread<Database> &th;
 };
 
 }
