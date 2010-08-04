@@ -13,6 +13,8 @@
 #include "AsyncWorker.h"
 #include "Thread.h"
 
+#include <netinet/ip.h>
+
 using namespace std;
 
 namespace com {
@@ -26,7 +28,7 @@ public:
 	Socket(const Database &database, const Logger &logger);
 	virtual ~Socket();
 
-	void bind(const struct in_addr *ifaddr, const struct sockaddr_in *maddr);
+	void init(const struct ip_mreqn *mreq, const struct sockaddr_in *bindaddr);
 
 	int sockfd;
 	const Database &db;
