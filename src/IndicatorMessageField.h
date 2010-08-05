@@ -19,7 +19,8 @@
  *
  * TODO - describe in detail the output format of the string.
  *
- * TODO - double, triple, quadrouple check types used, make sure all will jive
+ * TODO - double, triple, quadrouple check the c++ types used, make sure all the transforms/casting
+ *  will jive
  */
 enum FieldType{
 	FLOAT = 0,

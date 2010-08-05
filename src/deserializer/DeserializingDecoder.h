@@ -11,6 +11,9 @@
 
 #include "MessageDecoder.h"
 
+/**
+ * A decoder which deserializes the LB message into object fields.
+ */
 class DeserializingDecoder: public MessageDecoder {
 public:
 	DeserializingDecoder();

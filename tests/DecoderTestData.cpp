@@ -1,4 +1,10 @@
-
+/*
+ * This is some test data in big arrays, which can be used in unit tests. These were generated
+ * by the LightningBoltCoreLib java library.
+ *
+ *  Created on: Aug 4, 2010
+ *      Author: will.schick
+ */
 #include "decoder-test-common.h"
 #include <vector>
 #define MESSAGE_COUNT 299

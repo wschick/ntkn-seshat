@@ -89,6 +89,8 @@ BOOST_AUTO_TEST_CASE( test_decode_payload )
 
 		const std::vector<IndicatorMessageField > & messageFields = message->getFields();
 
+		//loop through all the message fields, and make sure that there is a corresponding
+		//field from the test list of feilds. Then make sure that all the data matches
 		for (std::vector<IndicatorMessageField>::const_iterator iter = messageFields.begin();
 				iter != messageFields.end(); iter++)
 		{
@@ -105,6 +107,7 @@ BOOST_AUTO_TEST_CASE( test_decode_payload )
 			BOOST_CHECK_MESSAGE(found,"Datum not found in test data: "<<iter->getFieldId());
 		}
 
+		//do the same, except start with the test data, and compare that with the decoded array
 		for (std::vector<TestMessageField>::iterator testIter = testMessageFields.begin();
 							testIter != testMessageFields.end(); testIter++)
 		{
