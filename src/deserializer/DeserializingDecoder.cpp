@@ -63,7 +63,6 @@ IndicatorMessage * DeserializingDecoder::decodeByteArray(char * bytes)
 	//pull the crc
 	int crc = getInt(bytes,position);
 
-
     return new DecodedIndicatorMessage(messageLength, txmitId, typeId, version, categoryId, messageId, crc, fields);
 }
 
