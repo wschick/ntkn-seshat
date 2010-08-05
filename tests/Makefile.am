@@ -25,4 +25,5 @@ ntkn_seshat_test_socket_SOURCES=\
 	SocketTest.cpp
 	
 ntkn_seshat_test_message_SOURCES=\
-	MessageDecoderTest.cpp
+	MessageDecoderTest.cpp \
+	DecoderTestData.cpp

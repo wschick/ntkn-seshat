@@ -8,8 +8,6 @@
 #include "MessageDecoder.h"
 
 MessageDecoder::MessageDecoder() {
-	// TODO Auto-generated constructor stub
-
 }
 
 MessageDecoder::~MessageDecoder() {

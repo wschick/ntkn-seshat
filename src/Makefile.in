@@ -57,7 +57,8 @@ am_libntkn_seshat_a_OBJECTS = Config.$(OBJEXT) Database.$(OBJEXT) \
 	InvalidGroupException.$(OBJEXT) \
 	InvalidIfaceException.$(OBJEXT) InvalidPortException.$(OBJEXT) \
 	SocketException.$(OBJEXT) MessageDecoder.$(OBJEXT) \
-	IndicatorMessage.$(OBJEXT) DecodedIndicatorMessage.$(OBJEXT) \
+	IndicatorMessage.$(OBJEXT) IndicatorMessageField.$(OBJEXT) \
+	DecodedIndicatorMessage.$(OBJEXT) \
 	DeserializingDecoder.$(OBJEXT)
 libntkn_seshat_a_OBJECTS = $(am_libntkn_seshat_a_OBJECTS)
 am__installdirs = "$(DESTDIR)$(bindir)"
@@ -189,6 +190,7 @@ libntkn_seshat_a_SOURCES = \
 	SocketException.cpp \
 	MessageDecoder.cpp \
 	IndicatorMessage.cpp \
+	IndicatorMessageField.cpp \
 	deserializer/DecodedIndicatorMessage.cpp \
 	deserializer/DeserializingDecoder.cpp 
 
@@ -283,6 +285,7 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/DecodedIndicatorMessage.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/DeserializingDecoder.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/IndicatorMessage.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/IndicatorMessageField.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/InvalidGroupException.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/InvalidIfaceException.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/InvalidPortException.Po@am__quote@

@@ -55,7 +55,8 @@ am__DEPENDENCIES_1 =
 ntkn_seshat_test_config_DEPENDENCIES =  \
 	$(top_srcdir)/src/libntkn-seshat.a $(am__DEPENDENCIES_1) \
 	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1)
-am_ntkn_seshat_test_message_OBJECTS = MessageDecoderTest.$(OBJEXT)
+am_ntkn_seshat_test_message_OBJECTS = MessageDecoderTest.$(OBJEXT) \
+	DecoderTestData.$(OBJEXT)
 ntkn_seshat_test_message_OBJECTS =  \
 	$(am_ntkn_seshat_test_message_OBJECTS)
 ntkn_seshat_test_message_LDADD = $(LDADD)
@@ -202,7 +203,8 @@ ntkn_seshat_test_socket_SOURCES = \
 	SocketTest.cpp
 
 ntkn_seshat_test_message_SOURCES = \
-	MessageDecoderTest.cpp
+	MessageDecoderTest.cpp \
+	DecoderTestData.cpp
 
 all: all-am
 
@@ -257,6 +259,7 @@ distclean-compile:
 	-rm -f *.tab.c
 
 include ./$(DEPDIR)/ConfigTest.Po
+include ./$(DEPDIR)/DecoderTestData.Po
 include ./$(DEPDIR)/MessageDecoderTest.Po
 include ./$(DEPDIR)/SocketTest.Po
 

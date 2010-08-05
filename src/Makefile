@@ -57,7 +57,8 @@ am_libntkn_seshat_a_OBJECTS = Config.$(OBJEXT) Database.$(OBJEXT) \
 	InvalidGroupException.$(OBJEXT) \
 	InvalidIfaceException.$(OBJEXT) InvalidPortException.$(OBJEXT) \
 	SocketException.$(OBJEXT) MessageDecoder.$(OBJEXT) \
-	IndicatorMessage.$(OBJEXT) DecodedIndicatorMessage.$(OBJEXT) \
+	IndicatorMessage.$(OBJEXT) IndicatorMessageField.$(OBJEXT) \
+	DecodedIndicatorMessage.$(OBJEXT) \
 	DeserializingDecoder.$(OBJEXT)
 libntkn_seshat_a_OBJECTS = $(am_libntkn_seshat_a_OBJECTS)
 am__installdirs = "$(DESTDIR)$(bindir)"
@@ -189,6 +190,7 @@ libntkn_seshat_a_SOURCES = \
 	SocketException.cpp \
 	MessageDecoder.cpp \
 	IndicatorMessage.cpp \
+	IndicatorMessageField.cpp \
 	deserializer/DecodedIndicatorMessage.cpp \
 	deserializer/DeserializingDecoder.cpp 
 
@@ -283,6 +285,7 @@ include ./$(DEPDIR)/Database.Po
 include ./$(DEPDIR)/DecodedIndicatorMessage.Po
 include ./$(DEPDIR)/DeserializingDecoder.Po
 include ./$(DEPDIR)/IndicatorMessage.Po
+include ./$(DEPDIR)/IndicatorMessageField.Po
 include ./$(DEPDIR)/InvalidGroupException.Po
 include ./$(DEPDIR)/InvalidIfaceException.Po
 include ./$(DEPDIR)/InvalidPortException.Po

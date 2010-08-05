@@ -107,10 +107,13 @@ DecodedIndicatorMessage.o DecodedIndicatorMessage.o:  \
   /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/istream \
   /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/istream.tcc \
   deserializer/DecodedIndicatorMessage.h IndicatorMessage.h \
+  IndicatorMessageField.h \
   /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/vector \
   /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_vector.h \
   /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_bvector.h \
-  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/vector.tcc
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/vector.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/sstream \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/sstream.tcc
 
 /usr/include/stdint.h:
 
@@ -386,6 +389,8 @@ deserializer/DecodedIndicatorMessage.h:
 
 IndicatorMessage.h:
 
+IndicatorMessageField.h:
+
 /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/vector:
 
 /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_vector.h:
@@ -393,3 +398,7 @@ IndicatorMessage.h:
 /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_bvector.h:
 
 /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/vector.tcc:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/sstream:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/sstream.tcc:

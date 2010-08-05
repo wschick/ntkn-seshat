@@ -1,10 +1,8 @@
-DeserializingDecoder.o DeserializingDecoder.o:  \
- deserializer/DeserializingDecoder.cpp \
-  deserializer/DeserializingDecoder.h MessageDecoder.h IndicatorMessage.h \
-  IndicatorMessageField.h /usr/include/stdint.h /usr/include/features.h \
-  /usr/include/sys/cdefs.h /usr/include/bits/wordsize.h \
-  /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
-  /usr/include/bits/wchar.h \
+IndicatorMessageField.o IndicatorMessageField.o:  \
+ IndicatorMessageField.cpp IndicatorMessageField.h /usr/include/stdint.h \
+  /usr/include/features.h /usr/include/sys/cdefs.h \
+  /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+  /usr/include/gnu/stubs-64.h /usr/include/bits/wchar.h \
   /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/vector \
   /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/functexcept.h \
   /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/exception_defines.h \
@@ -112,15 +110,7 @@ DeserializingDecoder.o DeserializingDecoder.o:  \
   /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/typeinfo \
   /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/ostream \
   /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/ostream.tcc \
-  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/sstream.tcc \
-  deserializer/DecodedIndicatorMessage.h IndicatorMessage.h \
-  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/iostream
-
-deserializer/DeserializingDecoder.h:
-
-MessageDecoder.h:
-
-IndicatorMessage.h:
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/sstream.tcc
 
 IndicatorMessageField.h:
 
@@ -403,9 +393,3 @@ IndicatorMessageField.h:
 /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/ostream.tcc:
 
 /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/sstream.tcc:
-
-deserializer/DecodedIndicatorMessage.h:
-
-IndicatorMessage.h:
-
-/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/iostream:

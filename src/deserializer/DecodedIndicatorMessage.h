@@ -9,12 +9,18 @@
 #define DECODEDINDICATORMESSAGE_H_
 
 #include "IndicatorMessage.h"
-
+//TODO - fix namespace
 using namespace com::ntkn;
 
+/**
+ * Implemenntation used by the deserializing decoder. It is basically a read only container of
+ * message fields.
+ */
 class DecodedIndicatorMessage: public IndicatorMessage {
 public:
 	DecodedIndicatorMessage(char * bytes);
+	DecodedIndicatorMessage(int messageLength, int txmitId, int typeId,
+						int version, int categoryId, int messageId, int crc, const std::vector<IndicatorMessageField> & fields);
 	virtual ~DecodedIndicatorMessage();
 
 	int getCategoryId();
@@ -25,7 +31,7 @@ public:
 	int getMessageId();
 	int getCrc();
 
-	std::vector<MessageField> getFields();
+	const std::vector<IndicatorMessageField> & getFields();
 private:
 	int messageLength;
 	int txmitId;
@@ -35,7 +41,7 @@ private:
 	int messageId;
 	int crc;
 
-	std::vector<MessageField> fields;
+	std::vector<IndicatorMessageField> fields;
 };
 
 #endif /* DECODEDINDICATORMESSAGE_H_ */

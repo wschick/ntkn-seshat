@@ -7,6 +7,7 @@
 
 #ifndef DESERIALIZINGDECODER_H_
 #define DESERIALIZINGDECODER_H_
+// TODO - fix namespace
 
 #include "MessageDecoder.h"
 

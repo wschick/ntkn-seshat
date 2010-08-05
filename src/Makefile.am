@@ -14,6 +14,7 @@ libntkn_seshat_a_SOURCES=\
 	SocketException.cpp \
 	MessageDecoder.cpp \
 	IndicatorMessage.cpp \
+	IndicatorMessageField.cpp \
 	deserializer/DecodedIndicatorMessage.cpp \
 	deserializer/DeserializingDecoder.cpp 
 

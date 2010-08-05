@@ -271,8 +271,10 @@ MessageDecoderTest.o MessageDecoderTest.o: MessageDecoderTest.cpp \
   /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_vector.h \
   /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_bvector.h \
   /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/vector.tcc \
+  decoder-test-common.h \
   /home/will.schick/essential/seshat/ntkn-seshat/wschick/src/MessageDecoder.h \
   /home/will.schick/essential/seshat/ntkn-seshat/wschick/src/IndicatorMessage.h \
+  /home/will.schick/essential/seshat/ntkn-seshat/wschick/src/IndicatorMessageField.h \
   /home/will.schick/essential/seshat/ntkn-seshat/wschick/src/deserializer/DeserializingDecoder.h \
   /home/will.schick/essential/seshat/ntkn-seshat/wschick/src/SocketException.h \
   /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/stdexcept \
@@ -280,7 +282,13 @@ MessageDecoderTest.o MessageDecoderTest.o: MessageDecoderTest.cpp \
   /home/will.schick/essential/seshat/ntkn-seshat/wschick/src/InvalidIfaceException.h \
   /home/will.schick/essential/seshat/ntkn-seshat/wschick/src/boost_throw_exception.h \
   /home/will.schick/essential/seshat/ntkn-seshat/wschick/src/InvalidPortException.h \
-  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/iostream
+  /usr/include/boost/lexical_cast.hpp \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/iostream \
+  /usr/include/math.h /usr/include/bits/huge_val.h \
+  /usr/include/bits/huge_valf.h /usr/include/bits/huge_vall.h \
+  /usr/include/bits/inf.h /usr/include/bits/nan.h \
+  /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h \
+  /usr/include/bits/mathinline.h
 
 ntkn-seshat-test.h:
 
@@ -900,9 +908,13 @@ ntkn-seshat-test.h:
 
 /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/vector.tcc:
 
+decoder-test-common.h:
+
 /home/will.schick/essential/seshat/ntkn-seshat/wschick/src/MessageDecoder.h:
 
 /home/will.schick/essential/seshat/ntkn-seshat/wschick/src/IndicatorMessage.h:
+
+/home/will.schick/essential/seshat/ntkn-seshat/wschick/src/IndicatorMessageField.h:
 
 /home/will.schick/essential/seshat/ntkn-seshat/wschick/src/deserializer/DeserializingDecoder.h:
 
@@ -918,4 +930,24 @@ ntkn-seshat-test.h:
 
 /home/will.schick/essential/seshat/ntkn-seshat/wschick/src/InvalidPortException.h:
 
+/usr/include/boost/lexical_cast.hpp:
+
 /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/iostream:
+
+/usr/include/math.h:
+
+/usr/include/bits/huge_val.h:
+
+/usr/include/bits/huge_valf.h:
+
+/usr/include/bits/huge_vall.h:
+
+/usr/include/bits/inf.h:
+
+/usr/include/bits/nan.h:
+
+/usr/include/bits/mathdef.h:
+
+/usr/include/bits/mathcalls.h:
+
+/usr/include/bits/mathinline.h:
